@@ -1,0 +1,379 @@
+body {
+    margin: 0 auto;
+    font-family: "Chewy", system-ui;
+}
+
+button {
+    font-family: "Chewy", system-ui;
+}
+
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 26px;
+}
+
+.content1 {
+    background-image: url("./images/landing.png");
+    background-size: cover;
+    height: 100vh;
+}
+
+.header img {
+    height: 40px;
+}
+
+.header button {
+    height: 54px;
+    width: 196px;
+    background-color: #FEFF04;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.menu {
+    color: white;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 44px;
+    text-shadow: 2px 2px #000000;
+}
+
+.contentLeft {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    color: white;
+    font-size: 24px;
+}
+
+.gameWeb {
+    height: 145px;
+}
+
+.contentLeft {
+    padding-top: 50px;
+    display: flex;
+    gap: 15px;
+}
+
+.content {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    padding: 8%;
+    gap: 8%;
+}
+
+.player {
+    background-color: yellow;
+    font-size: 30px;
+}
+
+.Battle {
+    color: white;
+    text-align: right;
+    font-size: 24px;
+}
+
+.content2 {
+    background-color: white;
+    background-size: cover;
+    padding: 0 8%;
+}
+
+.bestBox{
+    position: relative;
+}
+
+.best {
+    font-size: 72px;
+    background: -webkit-linear-gradient(#0866B0, #46CAE9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.bestEmpty{
+    font-size: 200px;
+    color: #0866B0; 
+    -webkit-text-stroke: 2px #46CAE9; 
+    -webkit-text-fill-color: transparent; 
+    display: inline-block;
+}
+
+.skins{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.skin{
+    width: 30vw;
+    height: 60vh;
+    background-image: linear-gradient(#46CAE9, #0866B0);
+    position: relative;
+}
+
+.skin img{
+    object-fit: cover;
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+}
+
+.skinTexts{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    inset: 0;
+    top: 35%;
+    color: white;
+}
+
+.skinTexts span:first-of-type{
+    font-size: 36px;
+}
+
+.skinTexts span:last-of-type{
+    font-size: 24px;
+}
+
+.mushroom{
+    margin-top: 200px;
+    background-image: url('./images/shape.svg');
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10%;
+    padding: 0 10%;
+    clip-path: polygon(20% 0, 100% 0, 100% 80%, 80% 100%, 0 100%, 0 20%);
+    overflow: visible; /* or 'unset' if you want to use the default value */
+}
+
+.mashroomImage{
+    margin-top: -150px;
+}
+
+.level{
+    color: white;
+}
+.buyPass{
+    color: black;
+    background-color: yellow;
+    padding: 10px;
+}
+.skins{
+    height: 500px;
+}
+.coins{
+    display: flex;
+    justify-content: space-around;
+}
+.coinBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(#46CAE9, #0866B0);
+    justify-content: flex-end;
+}
+.coinBoxHead{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 10px;
+}
+.vLot.png{
+    background-image: linear-gradient(#46CAE9, #0866B0);
+    padding: 76px 36px;
+}
+.coinCount{
+    font-size: 42px;
+}
+.coin, .money{
+    font-size: 30px;
+}
+.coin{
+    color: white;
+}
+.money{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F3F4F6;
+    width: 100%;
+    height: 62px;
+    clip-path: polygon(0 100%, 100% 100%, 100% 23%, 47% 23%, 52% 9%, 0 8%);
+}
+.coinLot{
+    background-image: linear-gradient(#46CAE9, #0866B0);
+    justify-content: flex-end;
+}
+.goodItems{
+    position: relative;
+}
+.acquireSkins {
+    font-size: 72px;
+    background: -webkit-linear-gradient(#0866B0, #46CAE9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.items{
+    font-size: 200px;
+    color: #0866B0; 
+    -webkit-text-stroke: 2px #46CAE9; 
+    -webkit-text-fill-color: transparent; 
+    display: inline-block;
+}
+.pageSkins{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 24px;
+    padding:0 48px;
+}
+.pageSkins span{
+    background-image: linear-gradient(#46CAE9, #0866B0);
+    margin-top: -50px;
+}
+.pageSkins span img{
+    margin-top: -50px;
+    height: 500px;
+}
+.lastPage{
+    display:flex;
+    flex-direction: column;
+    background-image: linear-gradient(#46CAE9, #0866B0);
+    justify-content: center;
+    gap: 40px;
+    align-items: flex-start;
+    padding:2rem;
+}
+.lastBackground{
+    display: flex;
+    align-items: stretch;
+    margin-top: 30px;
+}
+.withFriend{
+    font-size: 60px;
+    color: white;
+}
+.smallWrite{
+    font-size: 25px;
+}
+.playNow{
+    background-color: yellow;
+    padding: 12px 48px ;
+}
+.text{
+    color: white;
+}
+.footer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding:72px;
+    gap: 80px;
+}
+.footerRow1, .footerRow2{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.explow{
+    font-size: 32px;
+}
+.smallWriting{
+    width: 60%;
+    display: block;
+}
+@media only screen and (max-width: 768px) {
+    .header {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 10px;
+        padding-top: 26px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    .menu{
+        gap: 26px;
+    }
+    .gameWeb {
+        height: 84px;
+    }
+    .content {
+        align-items: center;
+        justify-content: center;
+        gap: 20%;
+        flex-wrap: wrap;
+    }
+    .content1{
+        height: auto;
+    }
+    .skins{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    .skin{
+        height: 22vh;
+        width: 100%;
+    }
+    .skin img{
+        height: 200px;
+    }
+    .mushroom{
+        gap: 0%;
+        padding: 0 5%;
+        margin-top: 100px;
+    }
+    .mashroomImage{
+        height: 270px;
+        margin-top: 50px;
+    }
+    .bestEmpty{
+        font-size: 75px;
+        padding-left: 1px;
+    }
+    .best{
+        font-size: 40px;
+    }
+    .bestBox{
+        margin-left: 30px;
+    }
+    .coins{
+        flex-direction: column;
+    }
+    .pageSkins{
+        flex-direction: column;
+        gap: 100px;
+    }
+    .lastBackground{
+        display: flex;
+        align-items: stretch;
+        flex-direction: column-reverse;
+        margin-top: 20px;
+    }
+    .footer{
+        padding: 15px;
+        gap: 40px;
+    }
+}
