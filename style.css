@@ -1,379 +1,882 @@
 body {
-    margin: 0 auto;
-    font-family: "Chewy", system-ui;
+  margin: 0 auto;
+  font-family: "Chewy", system-ui;
 }
 
 button {
-    font-family: "Chewy", system-ui;
+  font-family: "Chewy", system-ui;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+a:active{
+  color: darkblue;
 }
 
 .header {
-    display: flex;
-    justify-content: space-evenly;
-    padding-top: 26px;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 26px;
 }
 
 .content1 {
-    background-image: url("./images/landing.png");
-    background-size: cover;
-    height: 100vh;
+  background-image: url("./images/fortniteOg.jpg");
+  background-size: cover;
 }
 
 .header img {
-    height: 40px;
+  height: 40px;
 }
 
 .header button {
-    height: 54px;
-    width: 196px;
-    background-color: #FEFF04;
-    font-size: 30px;
-    font-weight: bold;
+  height: 54px;
+  width: 196px;
+  background-color: #feff04;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .menu {
-    color: white;
-    font-size: 18px;
-    display: flex;
-    align-items: center;
-    gap: 44px;
-    text-shadow: 2px 2px #000000;
+  color: white;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 44px;
+  text-shadow: 2px 2px #000000;
 }
 
 .contentLeft {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    color: white;
-    font-size: 24px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  color: white;
+  font-size: 24px;
 }
 
 .gameWeb {
-    height: 145px;
+  height: 145px;
 }
 
 .contentLeft {
-    padding-top: 50px;
-    display: flex;
-    gap: 15px;
+  padding-top: 50px;
+  display: flex;
+  gap: 15px;
 }
 
 .content {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-evenly;
-    padding: 8%;
-    gap: 8%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  padding: 8%;
+  gap: 8%;
 }
 
 .player {
-    background-color: yellow;
-    font-size: 30px;
+  background-color: yellow;
+  font-size: 30px;
 }
 
 .Battle {
-    color: white;
-    text-align: right;
-    font-size: 24px;
+  color: white;
+  text-align: right;
+  font-size: 24px;
 }
 
 .content2 {
-    background-color: white;
-    background-size: cover;
-    padding: 0 8%;
+  background-color: white;
+  background-size: cover;
+  padding: 0 8%;
 }
 
-.bestBox{
-    position: relative;
+.bestBox {
+  position: relative;
 }
 
 .best {
-    font-size: 72px;
-    background: -webkit-linear-gradient(#0866B0, #46CAE9);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
+  font-size: 72px;
+  background: -webkit-linear-gradient(#0866b0, #46cae9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.bestEmpty{
-    font-size: 200px;
-    color: #0866B0; 
-    -webkit-text-stroke: 2px #46CAE9; 
-    -webkit-text-fill-color: transparent; 
-    display: inline-block;
+.bestEmpty {
+  font-size: 200px;
+  color: #0866b0;
+  -webkit-text-stroke: 2px #46cae9;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
 }
 
-.skins{
-    margin-top: 60px;
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem;
+.skins {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
 }
 
-.skin{
-    width: 30vw;
-    height: 60vh;
-    background-image: linear-gradient(#46CAE9, #0866B0);
-    position: relative;
+.skin {
+  width: 30vw;
+  height: 60vh;
+  background-image: linear-gradient(#46cae9, #0866b0);
+  position: relative;
 }
 
-.skin img{
-    object-fit: cover;
-    position: absolute;
-    bottom: 0;
-    left: 20%;
+.skin img {
+  object-fit: cover;
+  position: absolute;
+  bottom: 0;
+  left: 20%;
 }
 
-.skinTexts{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    position: absolute;
-    align-items: center;
-    text-align: center;
-    inset: 0;
-    top: 35%;
-    color: white;
+.skinTexts {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: absolute;
+  align-items: center;
+  text-align: center;
+  inset: 0;
+  top: 35%;
+  color: white;
 }
 
-.skinTexts span:first-of-type{
-    font-size: 36px;
+.skinTexts span:first-of-type {
+  font-size: 36px;
 }
 
-.skinTexts span:last-of-type{
-    font-size: 24px;
+.skinTexts span:last-of-type {
+  font-size: 24px;
 }
 
-.mushroom{
-    margin-top: 200px;
-    background-image: url('./images/shape.svg');
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 10%;
-    padding: 0 10%;
-    clip-path: polygon(20% 0, 100% 0, 100% 80%, 80% 100%, 0 100%, 0 20%);
-    overflow: visible; /* or 'unset' if you want to use the default value */
+.mushroom {
+  margin-top: 200px;
+  background-image: url("./images/shape.svg");
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10%;
+  padding: 0 10%;
+  clip-path: polygon(20% 0, 100% 0, 100% 80%, 80% 100%, 0 100%, 0 20%);
+  overflow: visible; /* or 'unset' if you want to use the default value */
 }
 
-.mashroomImage{
-    margin-top: -150px;
+.mashroomImage {
+  margin-top: -150px;
 }
 
-.level{
-    color: white;
+.level {
+  color: white;
 }
-.buyPass{
-    color: black;
-    background-color: yellow;
-    padding: 10px;
+.buyPass {
+  color: black;
+  background-color: yellow;
+  padding: 10px;
 }
-.skins{
-    height: 500px;
+.skins {
+  height: 500px;
 }
-.coins{
-    display: flex;
-    justify-content: space-around;
+.coins {
+  display: flex;
+  justify-content: space-around;
 }
-.coinBox{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-image: linear-gradient(#46CAE9, #0866B0);
-    justify-content: flex-end;
+.coinBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(#46cae9, #0866b0);
+  justify-content: flex-end;
 }
-.coinBoxHead{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px 10px;
+.coinBoxHead {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 10px;
 }
-.vLot.png{
-    background-image: linear-gradient(#46CAE9, #0866B0);
-    padding: 76px 36px;
+.vLot.png {
+  background-image: linear-gradient(#46cae9, #0866b0);
+  padding: 76px 36px;
 }
-.coinCount{
-    font-size: 42px;
+.coinCount {
+  font-size: 42px;
 }
-.coin, .money{
-    font-size: 30px;
+.coin,
+.money {
+  font-size: 30px;
 }
-.coin{
-    color: white;
+.coin {
+  color: white;
 }
-.money{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #F3F4F6;
-    width: 100%;
-    height: 62px;
-    clip-path: polygon(0 100%, 100% 100%, 100% 23%, 47% 23%, 52% 9%, 0 8%);
+.money {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f3f4f6;
+  width: 100%;
+  height: 62px;
+  clip-path: polygon(0 100%, 100% 100%, 100% 23%, 47% 23%, 52% 9%, 0 8%);
 }
-.coinLot{
-    background-image: linear-gradient(#46CAE9, #0866B0);
-    justify-content: flex-end;
+.coinLot {
+  background-image: linear-gradient(#46cae9, #0866b0);
+  justify-content: flex-end;
 }
-.goodItems{
-    position: relative;
+.goodItems {
+  position: relative;
 }
 .acquireSkins {
-    font-size: 72px;
-    background: -webkit-linear-gradient(#0866B0, #46CAE9);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
+  font-size: 72px;
+  background: -webkit-linear-gradient(#0866b0, #46cae9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
-.items{
-    font-size: 200px;
-    color: #0866B0; 
-    -webkit-text-stroke: 2px #46CAE9; 
-    -webkit-text-fill-color: transparent; 
-    display: inline-block;
+.items {
+  font-size: 200px;
+  color: #0866b0;
+  -webkit-text-stroke: 2px #46cae9;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
 }
-.pageSkins{
+.pageSkins {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 24px;
+  padding: 0 48px;
+}
+.pageSkins span {
+  background-image: linear-gradient(#46cae9, #0866b0);
+  margin-top: -50px;
+}
+.pageSkins span img {
+  margin-top: -50px;
+  height: 500px;
+}
+.lastPage {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(#46cae9, #0866b0);
+  justify-content: center;
+  gap: 40px;
+  align-items: flex-start;
+  padding: 2rem;
+}
+.lastBackground {
+  display: flex;
+  align-items: stretch;
+  margin-top: 30px;
+}
+.withFriend {
+  font-size: 60px;
+  color: white;
+}
+.smallWrite {
+  font-size: 25px;
+}
+.playNow {
+  background-color: yellow;
+  padding: 12px 48px;
+}
+.text {
+  color: white;
+}
+.footer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 72px;
+  gap: 80px;
+}
+.footerRow1,
+.footerRow2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.explow {
+  font-size: 32px;
+}
+.smallWriting {
+  width: 60%;
+  display: block;
+}
+.events {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-size: 23px;
+}
+.eventsTitle {
+  font-size: 44px;
+}
+.tournamentDiv {
+  display: flex;
+  width: 250px;
+  height: 330px;
+  background-size: cover;
+}
+.tournamentDiv:hover .events {
+  display: flex;
+}
+
+.tournamentOne {
+  background-image: url("./images/firstImage.jpg");
+}
+.tournamentTwo {
+  background-image: url("./images/secondPic.png");
+}
+.tournamentThree {
+  background-image: url("./images/fourthPic.jpg");
+}
+.tournamentFour {
+  background-image: url("./images/tournomentFour.jpg");
+}
+.tournamentFive {
+  background-image: url("./images/tournomentLast.png");
+}
+.tournament {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.nextTournaments {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 110px;
+  background-image: linear-gradient(to right, #038ece, #05f5fe);
+}
+.events {
+  width: 100%;
+  background-color: #6a6a6a7c;
+  padding: 30px 10px;
+  gap: 20px;
+  display: none;
+}
+.event {
+  display: flex;
+  width: 100%;
+  background-color: #3d3d3d;
+  color: goldenrod;
+  justify-content: space-between;
+  align-items: center;
+}
+.eventR {
+  background-color: purple;
+  color: white;
+  border-radius: 40% 60% 40% 60% / 100% 0% 100% 0%;
+  padding: 0px 10px;
+}
+.firstCup {
+  background-image: url("./images/duoCup.jpg");
+}
+.secondCup {
+  background-image: url("./images/fortnitePic.jpg");
+}
+.thirdCup {
+  background-image: url("./images/nextBest.jpg");
+}
+.fourthCup {
+  background-image: url("./images/nextOne.jpg");
+}
+.fifthCup {
+  background-image: url("./images/nextPic.jpg");
+}
+.sixthCup {
+  background-image: url("./images/nextTwo.jpg");
+}
+.seventhCup {
+  background-image: url("./images/whitePic.jpg");
+}
+.eigthCup {
+  background-image: url("./images/goldPic.png");
+}
+.ninthCup {
+  background-image: url("./images/goldTwo.png");
+}
+.tenthCup {
+  background-image: url("./images/goldWin.png");
+}
+.elevnthCup {
+  background-image: url("./images/catPic.jpg");
+}
+.twelvthCup {
+  background-image: url("./images/nextThree.jpg");
+}
+.fourteenthCup {
+  background-image: url("./images/redSkin.jpg");
+}
+.fifteenthCup {
+  background-image: url("./images/orangeSkin.jpg");
+}
+.sixteenthCup {
+  background-image: url("./images/superSkin.jpg");
+}
+.otherTournements {
+  font-size: 70px;
+  color: white;
+  text-align: center;
+  margin-top: 85px;
+}
+.youtubeData {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("./travisFortnite.jpeg");
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: #f7e1f5;
+}
+.tournamentRecording {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+  align-items: center;
+}
+.worldCup {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 50%;
+  font-size: 25px;
+}
+.battleBucks {
+  font-size: 150px;
+}
+.wreckedPass {
+  font-size: 60px;
+}
+.contentPass {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.textPass {
+  font-size: 25px;
+}
+
+.videoPlayButton {
+  width: 5.4em;
+  height: 5.4em;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: relative;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  border-radius: 100%;
+  cursor: pointer;
+  border-width: 0.2em;
+  border-style: solid;
+  border-color: white;
+  border-image: initial;
+  transition: all 300ms cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+.videoPlayButton span {
+  position: relative;
+  left: 0.2em;
+  width: 0;
+  height: 0;
+  display: inline-block;
+  border-top: 1.2em solid transparent;
+  border-bottom: 1.2em solid transparent;
+  border-left: 1.8em solid white;
+}
+.battlePassContent {
+  position: relative;
+  background-image: url("./absolutDoom.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.transparent {
+  background-color: #0000008b;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+.battlePassContent iframe {
+}
+.battlePassContent1 {
+  background: rgb(78, 169, 177);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 90%;
+  position: relative;
+  margin: auto;
+  padding-top: 50px;
+}
+
+/* Hide the images by default */
+.fade {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.battleVideo {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.roundVideo {
+  border-radius: 50%;
+  width: 235px;
+  height: 235px;
+  background-size: cover;
+  box-shadow: 0px 20px 50px #000;
+  cursor: pointer;
+}
+.games {
+  font-size: 70px;
+  text-align: center;
+  background-color: #4ea9b163;
+}
+.games h1 {
+  margin: 0;
+}
+.gamesMode img {
+  width: 40%;
+}
+.roundVideo1 {
+  background-image: url("./images/battlepassVideo.png");
+}
+.roundVideo2 {
+  background-image: url("./images/rankedBattlepass.png");
+}
+.roundVideo3 {
+  background-image: url("./images/bestPass.png");
+}
+.roundVideo4 {
+  background-image: url("./images/pealeSkin.png");
+}
+.brownBackground {
+  background-color: rgba(63, 90, 96, 0.889);
+}
+.bigVideo {
+  display: flex;
+  justify-content: center;
+  padding: 70px;
+}
+#bigVideo {
+  border-radius: 50px;
+}
+.gamesMode {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  row-gap: 3rem;
+}
+.gamesMode div,
+.gamesMode img {
+  width: 40%;
+  height: 400px;
+  background-size: cover;
+  cursor: pointer;
+  height: 400px;
+}
+.heroTilted {
+  background-image: url("./images/heroTilted.jpeg");
+}
+.heroTilted:hover {
+  background-image: url("./images/gifs/tiltedWars.gif");
+}
+.goGoated {
+  background-image: url("./goGoated.jpeg");
+}
+.goGoated:hover {
+  background-image: url("./images/gifs/goGoated.gif");
+}
+.pieceControl {
+  background-image: url("./images/pieceControl.jpeg");
+}
+.pieceControl:hover {
+  background-image: url("./images/gifs/pieceControl.gif");
+}
+.fortniteReload {
+  background-image: url("./images/fortniteReload.jpg");
+}
+.fortniteReload:hover {
+  background-image: url("./images/gifs/reload.gif");
+}
+.theVault {
+  background-image: url("./theVault.jpeg");
+}
+.theVault:hover {
+  background-image: url("./images/gifs/vault.gif");
+}
+.miniGames {
+  background-image: url("./MiniGames.jpeg");
+}
+.miniGames:hover {
+  background-image: url("./images/gifs/miniGames.gif");
+}
+.speedRealistics {
+  background-image: url("./speedRealistics.jpeg");
+}
+.speedRealistics:hover {
+  background-image: url("./images/gifs/rilistics.gif");
+}
+.onlyUp {
+  background-image: url("./onlyUp.webp");
+}
+.onlyUp:hover {
+  background-image: url("./images/gifs/onlyUp.gif");
+}
+.armoBoxfights {
+  height: 50px;
+}
+.itemShop img {
+  width: 100%;
+}
+.itemsOne {
+  text-align: center;
+  position: fixed;
+  z-index: 100;
+  inset: 0;
+  top: 100px;
+  color: white;
+  font-size: 40px;
+}
+.hShop {
+  background: linear-gradient(to right, #020e44, #022b6c, #022f6a);
+}
+.quest {
+  font-size: 40px;
+  background-color: darkblue;
+  color: white;
+  width: 600px;
+  height: 56px;
+}
+.questLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.questDiv {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3rem;
+}
+.firstQuests {
+  border-radius: 1rem;
+  font-size: 30px;
+  background-color: blue;
+  color: white;
+  width: 400px;
+  height: 100px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.firstQuests img {
+  height: 100%;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+.quest{
+  text-align: center;
+  padding-left: 20px;
+}
+.accountLevels{
+  font-size: 30px;
+}
+.questListItem{
+  display: flex;
+  justify-content:space-between ;
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid gray;
+}
+.questTitle{
+  padding-left: 20px;
+}
+#mobileApp, #reloadRanked, #fortniteRanked{
+  display: none;
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 24px;
-    padding:0 48px;
-}
-.pageSkins span{
-    background-image: linear-gradient(#46CAE9, #0866B0);
-    margin-top: -50px;
-}
-.pageSkins span img{
-    margin-top: -50px;
-    height: 500px;
-}
-.lastPage{
-    display:flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    padding-top: 26px;
+    flex-wrap: wrap;
     flex-direction: column;
-    background-image: linear-gradient(#46CAE9, #0866B0);
-    justify-content: center;
-    gap: 40px;
     align-items: flex-start;
-    padding:2rem;
-}
-.lastBackground{
+    gap: 20px;
+  }
+  .menu {
+    gap: 26px;
+  }
+  .gameWeb {
+    height: 84px;
+  }
+  .content {
+    align-items: center;
+    justify-content: center;
+    gap: 20%;
+    flex-wrap: wrap;
+  }
+  .content1 {
+    height: auto;
+  }
+  .skins {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+  .skin {
+    height: 22vh;
+    width: 100%;
+  }
+  .skin img {
+    height: 200px;
+  }
+  .mushroom {
+    gap: 0%;
+    padding: 0 5%;
+    margin-top: 100px;
+  }
+  .mashroomImage {
+    height: 270px;
+    margin-top: 50px;
+  }
+  .bestEmpty {
+    font-size: 75px;
+    padding-left: 1px;
+  }
+  .best {
+    font-size: 40px;
+  }
+  .bestBox {
+    margin-left: 30px;
+  }
+  .coins {
+    flex-direction: column;
+  }
+  .pageSkins {
+    flex-direction: column;
+    gap: 100px;
+  }
+  .lastBackground {
     display: flex;
     align-items: stretch;
-    margin-top: 30px;
-}
-.withFriend{
-    font-size: 60px;
-    color: white;
-}
-.smallWrite{
-    font-size: 25px;
-}
-.playNow{
-    background-color: yellow;
-    padding: 12px 48px ;
-}
-.text{
-    color: white;
-}
-.footer{
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
-    padding:72px;
-    gap: 80px;
-}
-.footerRow1, .footerRow2{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.explow{
-    font-size: 32px;
-}
-.smallWriting{
-    width: 60%;
-    display: block;
-}
-@media only screen and (max-width: 768px) {
-    .header {
-        display: flex;
-        justify-content: space-evenly;
-        padding: 10px;
-        padding-top: 26px;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 20px;
-    }
-    .menu{
-        gap: 26px;
-    }
-    .gameWeb {
-        height: 84px;
-    }
-    .content {
-        align-items: center;
-        justify-content: center;
-        gap: 20%;
-        flex-wrap: wrap;
-    }
-    .content1{
-        height: auto;
-    }
-    .skins{
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-    }
-    .skin{
-        height: 22vh;
-        width: 100%;
-    }
-    .skin img{
-        height: 200px;
-    }
-    .mushroom{
-        gap: 0%;
-        padding: 0 5%;
-        margin-top: 100px;
-    }
-    .mashroomImage{
-        height: 270px;
-        margin-top: 50px;
-    }
-    .bestEmpty{
-        font-size: 75px;
-        padding-left: 1px;
-    }
-    .best{
-        font-size: 40px;
-    }
-    .bestBox{
-        margin-left: 30px;
-    }
-    .coins{
-        flex-direction: column;
-    }
-    .pageSkins{
-        flex-direction: column;
-        gap: 100px;
-    }
-    .lastBackground{
-        display: flex;
-        align-items: stretch;
-        flex-direction: column-reverse;
-        margin-top: 20px;
-    }
-    .footer{
-        padding: 15px;
-        gap: 40px;
-    }
+    flex-direction: column-reverse;
+    margin-top: 20px;
+  }
+  .footer {
+    padding: 15px;
+    gap: 40px;
+  }
 }
